@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohd Shavez Qureshi · Backend Developer</title>
+<meta name="description" content="Backend developer building APIs, databases, security and production systems, plus web, desktop and Android apps. Based in Lucknow, India.">
+<link rel="canonical" href="https://shavez90.github.io/">
+<meta name="theme-color" content="#F7F5F0">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shavez90.github.io/">
+<meta property="og:title" content="Mohd Shavez Qureshi · Backend Developer">
+<meta property="og:description" content="Backend developer building APIs, databases, security and production systems, plus web, desktop and Android apps. Based in Lucknow, India.">
+<meta property="og:image" content="https://shavez90.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Mohd Shavez Qureshi, Backend Developer">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mohd Shavez Qureshi","jobTitle":"Backend Developer","url":"https://shavez90.github.io/","sameAs":["https://github.com/Shavez90","https://www.linkedin.com/in/mohd-shavez-a8aa94286"],"address":{"@type":"PostalAddress","addressLocality":"Lucknow","addressCountry":"IN"}}</script>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Libre+Caslon+Display&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: full-width ivory ledger, like engraved stationery: white cards on an ivory page, near-black ink, antique gold for accents and actions. A sticky index rail on the left; the main column uses a 12-column grid. Skills and projects are short cards, three to a row on wide screens. Backend leads. Single light theme by choice. */
+:root{
+  --bg:#F7F5F0;
+  --panel:#FFFFFF;
+  --line:#E3DFD5;
+  --text:#1B1A18;
+  --muted:#6E695F;
+  --brass:#84622A;
+  --brass-dim:#DCCDAE;
+  --f-display:"Libre Caslon Display", "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme:light;
+}
+html{font-size:clamp(15px, 0.3vw + 11px, 18px)}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--f-body);font-size:1rem;line-height:1.65;
+  padding-left:max(clamp(16px, 3vw, 64px), env(safe-area-inset-left, 0px));
+  padding-right:max(clamp(16px, 3vw, 64px), env(safe-area-inset-right, 0px));
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brass);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;text-wrap:balance}
+p{margin:0}
+.muted{color:var(--muted)}
+.smallcaps{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.mono{font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+
+.shell{max-width:1760px;margin:0 auto;display:grid;grid-template-columns:clamp(200px,13vw,260px) minmax(0,1fr);gap:clamp(32px,4.2vw,88px);padding-block:36px 96px}
+
+/* Rail */
+.rail{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 32px);align-self:start;min-height:calc(100vh - 72px);display:flex;flex-direction:column;justify-content:space-between;gap:32px;border-right:1px solid var(--line);padding-right:28px}
+.rail-top{display:flex;flex-direction:column;gap:26px}
+.rail nav ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.rail nav a{display:block;padding:6px 0 6px 14px;border-left:1px solid transparent;color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s ease,border-color .2s ease}
+.rail nav a:hover{color:var(--text)}
+.rail nav a[aria-current="true"]{color:var(--text);border-left-color:var(--brass)}
+.rail-foot{display:flex;flex-direction:column;gap:4px}
+
+/* Main */
+.main{min-width:0;display:flex;flex-direction:column;gap:clamp(72px,7vw,120px)}
+.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(20px,2vw,40px)}
+.block{display:flex;flex-direction:column;gap:clamp(24px,2.4vw,40px);scroll-margin-top:28px}
+.block-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-bottom:1px solid var(--brass-dim);padding-bottom:12px}
+.block-head h2{font-size:clamp(1.9rem,2.6vw,3rem)}
+
+/* Hero */
+.hero{row-gap:40px;align-items:end;padding-top:clamp(8px,3vw,48px)}
+.hero h1{grid-column:1 / span 7;font-size:clamp(3.2rem,6.4vw,8.4rem);line-height:.92;letter-spacing:-0.01em}
+.hero-side{grid-column:8 / span 5;display:flex;flex-direction:column;gap:22px;padding-bottom:10px}
+.lede{font-size:clamp(1.05rem,1.2vw,1.35rem);line-height:1.6;max-width:42ch}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px;margin:0}
+.facts dt{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:2px 0 0;font-weight:500}
+.stats{grid-column:1 / -1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--brass-dim);border-bottom:1px solid var(--line);margin:0}
+.stats div{display:flex;flex-direction:column;padding:22px 24px 22px 0}
+.stats div + div{padding-left:24px;border-left:1px solid var(--line)}
+.stats dt{order:2;color:var(--muted);font-size:.9rem;margin-top:6px}
+.stats dd{margin:0;font-family:var(--f-display);font-size:clamp(2.6rem,3.6vw,4.4rem);line-height:1;color:var(--brass);font-variant-numeric:tabular-nums}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.6vw,28px)}
+.card{display:flex;flex-direction:column;gap:12px;padding:clamp(20px,1.8vw,30px);background:var(--panel);border:1px solid var(--line);transition:border-color .2s ease}
+.card:hover{border-color:#CDBF9F}
+.card h3{font-size:clamp(1.45rem,1.7vw,1.9rem);line-height:1.1}
+.card .tags{margin-top:auto;padding-top:10px;font-family:var(--f-mono);font-size:.74rem;line-height:1.7;color:var(--muted)}
+.cap.lead-cap{border-top:2px solid var(--brass)}
+.card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.pill{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.04em;padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.pill.live{border-color:var(--brass);color:var(--brass)}
+.card .link{font-size:.9rem}
+
+/* Method */
+.method{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,2vw,40px);margin:0}
+.method div{border-top:1px solid var(--brass);padding-top:16px}
+.method dt{font-family:var(--f-display);font-size:clamp(1.3rem,1.45vw,1.6rem);line-height:1.2}
+.method dd{margin:10px 0 0;color:var(--muted)}
+
+/* Experience */
+.history{row-gap:28px}
+.history .col{display:flex;flex-direction:column;gap:18px}
+.history .col:first-child{grid-column:1 / span 6}
+.history .col:last-child{grid-column:8 / span 5}
+.row{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:22px}
+.row .when{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.row p{display:flex;flex-direction:column}
+
+/* Contact */
+.contact{align-items:center;row-gap:36px}
+.bizcard{grid-column:1 / span 7;aspect-ratio:1.75;max-width:100%;background:#FFFFFF;color:#1B1A18;border:1px solid #DCCDAE;outline:1px solid #84622A;outline-offset:-14px;padding:8% 8.5%;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 2px rgba(27,26,24,.06),0 28px 56px -28px rgba(27,26,24,.24);container-type:inline-size}
+.bc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.bc-name{font-family:var(--f-display);font-size:clamp(18px,7.4cqi,58px);line-height:1.05}
+.bc-role{font-size:clamp(10px,2.8cqi,20px);color:#6E695F;margin-top:2.5cqi}
+.bc-mono{font-family:var(--f-display);color:#84622A;font-size:clamp(12px,4.4cqi,32px);letter-spacing:.08em}
+.bizcard dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.5cqi 4cqi;align-items:baseline}
+.bizcard dt{font-family:var(--f-mono);font-size:clamp(8px,1.9cqi,14px);letter-spacing:.08em;text-transform:uppercase;color:#84622A}
+.bizcard dd{margin:0;font-size:clamp(10px,2.6cqi,20px);overflow-wrap:anywhere}
+.actions{grid-column:9 / span 4;display:flex;flex-direction:column;gap:16px}
+.actions .lead{font-family:var(--f-display);font-size:clamp(2rem,2.6vw,3rem);line-height:1.1}
+.email-text{font-family:var(--f-mono);font-size:.9rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+button{font:600 .9rem/1 var(--f-body);letter-spacing:.04em;padding:14px 22px;border-radius:2px;cursor:pointer;border:1px solid var(--brass);transition:background .2s ease,filter .2s ease}
+.primary{background:var(--brass);color:#FFFFFF}
+.primary:hover{filter:brightness(1.08)}
+.secondary{background:transparent;color:var(--brass)}
+.secondary:hover{background:var(--brass-dim)}
+button:disabled{opacity:.5;cursor:default}
+.status{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);min-height:1.4em}
+.colophon{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* First-screen contact links and keyboard skip link */
+.hero-links{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;font-size:.92rem}
+.hero-links .cta{display:inline-block;padding:10px 18px;background:var(--brass);color:#FFFFFF;text-decoration:none;font-weight:600;letter-spacing:.03em;border-radius:2px}
+.hero-links .cta:hover{filter:brightness(1.08)}
+.skip{position:absolute;left:-9999px;top:8px;z-index:20;background:var(--panel);color:var(--text);padding:10px 14px;border:1px solid var(--brass)}
+.skip:focus{left:max(16px, env(safe-area-inset-left, 0px))}
+
+/* Narrower screens */
+@media (max-width:1180px){
+  .shell{grid-template-columns:1fr;gap:28px}
+  .rail{position:static;min-height:0;border-right:0;border-bottom:1px solid var(--line);padding:0 0 18px;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between}
+  .rail-top{flex-direction:row;flex-wrap:wrap;align-items:center;gap:14px 28px}
+  .rail-foot{display:none}
+  .rail nav ol{flex-direction:row;flex-wrap:wrap;gap:2px 18px}
+  .rail nav a{padding:4px 0;border-left:0;border-bottom:1px solid transparent}
+  .rail nav a[aria-current="true"]{border-bottom-color:var(--brass)}
+  .hero h1{grid-column:1 / -1}
+  .hero-side{grid-column:1 / span 9}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .method{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .history .col:first-child{grid-column:1 / span 6}
+  .history .col:last-child{grid-column:7 / span 6}
+  .bizcard{grid-column:1 / span 7}
+  .actions{grid-column:8 / span 5}
+}
+@media (max-width:760px){
+  .hero-side,.bizcard,.actions,.history .col:first-child,.history .col:last-child{grid-column:1 / -1}
+  .cards{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .stats div{padding:16px 0}
+  .stats div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+}
+@media (max-width:560px){
+  .method,.facts{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+
+/* Printing: plain ink on white, navigation and buttons hidden */
+@media print{
+  :root{--bg:#FFFFFF;--panel:#FFFFFF}
+  body{padding:0}
+  .rail,.btns,.status,.hero-links,.skip{display:none !important}
+  .shell{display:block;padding:0}
+  .main{gap:28px}
+  .card,.bizcard{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-top">
+      <nav aria-label="Sections">
+        <ol>
+          <li><a href="#skills">What I do</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#method">How I work</a></li>
+          <li><a href="#history">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+    </div>
+    <div class="rail-foot">
+      <span class="mono">Lucknow, India</span>
+      <span class="mono">Portfolio · 2026</span>
+    </div>
+  </aside>
+
+  <main class="main" id="main" tabindex="-1">
+    <section class="g12 hero" id="top">
+      <h1>Mohd Shavez<br>Qureshi</h1>
+      <div class="hero-side">
+        <span class="smallcaps">Backend Developer</span>
+        <p class="lede">I build backend systems: APIs, databases, security, and the servers they run on. I also ship the apps on top of them, for the web, desktop and Android.</p>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Software Engineer</dd></div>
+          <div><dt>Core stack</dt><dd>TypeScript · Node.js · PostgreSQL</dd></div>
+          <div><dt>Also</dt><dd>Java · Spring Boot</dd></div>
+          <div><dt>Based in</dt><dd>Lucknow, India</dd></div>
+        </dl>
+        <p class="hero-links">
+          <a class="cta" href="#contact">Get in touch</a>
+          <a href="https://github.com/Shavez90" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mohd-shavez-a8aa94286" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+      <dl class="stats">
+        <div><dt>Systems live in production</dt><dd>3</dd></div>
+        <div><dt>Commits authored in 2026</dt><dd>1,556</dd></div>
+        <div><dt>Test files across my systems</dt><dd>452</dd></div>
+      </dl>
+    </section>
+
+    <section class="block" id="skills">
+      <div class="block-head"><h2>What I do</h2><span class="mono">Backend first</span></div>
+      <div class="cards">
+        <article class="card cap lead-cap">
+          <span class="smallcaps">Primary</span>
+          <h3>Backend and APIs</h3>
+          <p class="muted">REST APIs with clear contracts, validation at every boundary, and authentication designed in from the start.</p>
+          <p class="tags">NestJS · Node.js · Spring Boot · REST · Zod · JWT</p>
+        </article>
+        <article class="card cap">
+          <h3>Databases</h3>
+          <p class="muted">Schemas, migrations and queries built to stay correct. I isolate each customer's data in the database itself.</p>
+          <p class="tags">PostgreSQL · SQL · row-level security · Redis · MongoDB</p>
+        </article>
+        <article class="card cap">
+          <h3>Security</h3>
+          <p class="muted">Access control, signed licences that verify offline, and secret scanning on every change.</p>
+          <p class="tags">RBAC · Ed25519 signing · bcrypt · gitleaks</p>
+        </article>
+        <article class="card cap">
+          <h3>Production and DevOps</h3>
+          <p class="muted">I run what I build: Linux servers, nginx and TLS, CI/CD pipelines and error monitoring.</p>
+          <p class="tags">Linux · nginx · GitHub Actions · Sentry · Docker</p>
+        </article>
+        <article class="card cap">
+          <h3>Apps</h3>
+          <p class="muted">Web, desktop and Android from one codebase, including offline-first apps that work without a server.</p>
+          <p class="tags">React · Next.js · Electron · Capacitor · PWA</p>
+        </article>
+        <article class="card cap">
+          <h3>AI-assisted engineering</h3>
+          <p class="muted">I work with AI coding agents every day, and I set the rules they work under: size limits, checks and hand-off logs.</p>
+          <p class="tags">Claude Code · Codex</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="work">
+      <div class="block-head"><h2>Work</h2><span class="mono">Six systems</span></div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-head"><h3>ControlHub</h3><span class="pill live">Live</span></div>
+          <p class="muted">A multi-tenant SaaS for operations, support and HR. I lead it end to end: API, database design and deployment.</p>
+          <p class="tags">NestJS · PostgreSQL · Redis · React</p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>Central Hub</h3><span class="pill">Deployed</span></div>
+          <p class="muted">A licensing and federation service for self-hosted servers. Signed licences verify offline, and keys rotate without breaking old ones.</p>
+          <p class="tags">Next.js · PostgreSQL · Ed25519 · Redis</p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>GodWeb</h3><span class="pill live">Live</span></div>
+          <p class="muted">An AI workspace platform built by a team. I built its self-hosted edition and the federation between servers.</p>
+          <p class="tags">Next.js · PostgreSQL · pgvector · Redis</p>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>LifeOS</h3><span class="pill">Released</span></div>
+          <p class="muted">An offline-first app for notes, tasks and spending on Windows, Android and the web. No account and no tracking.</p>
+          <p class="tags">React · Electron · Capacitor · IndexedDB</p>
+          <a class="link" href="https://github.com/Shavez90/LifeOS-Releases/releases" target="_blank" rel="noopener">Download releases</a>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>Goodluck Waterproofing</h3><span class="pill live">Live</span></div>
+          <p class="muted">A business site, admin dashboard and API for a contractor, built as one Next.js app that runs on free tiers.</p>
+          <p class="tags">Next.js · MongoDB · Cloudinary</p>
+          <a class="link" href="https://goodluckwaterproofing.netlify.app" target="_blank" rel="noopener">Visit the site</a>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>Hazri</h3><span class="pill">In progress</span></div>
+          <p class="muted">Attendance and wages for a construction company, with a phone app that records attendance without a signal.</p>
+          <p class="tags">Spring Boot · PostgreSQL · Next.js PWA</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="method">
+      <div class="block-head"><h2>How I work</h2></div>
+      <dl class="method">
+        <div><dt>Rules where they cannot be skipped</dt><dd>Serious rules go in the database, a CI check or a hook, not in anyone's memory.</dd></div>
+        <div><dt>Evidence before claims</dt><dd>A fix is done when the real entry point has been tested.</dd></div>
+        <div><dt>I run what I build</dt><dd>Planned restarts, monitored errors, no surprises in production.</dd></div>
+        <div><dt>AI agents, owned results</dt><dd>Agents write fast. I own the design and verify what ships.</dd></div>
+      </dl>
+    </section>
+
+    <section class="block" id="history">
+      <div class="block-head"><h2>Experience</h2></div>
+      <div class="g12 history">
+        <div class="col">
+          <div class="row"><span class="when">2026 – present</span><p><strong>Software Engineer, VorldX Industries</strong><span class="muted">Backend, databases and production for the company's products.</span></p></div>
+        </div>
+        <div class="col">
+          <div class="row"><span class="when">2026 – 2029</span><p><strong>B.Tech, Computer Science</strong><span class="muted">Integral University, expected 2029</span></p></div>
+          <div class="row"><span class="when">2023 – 2026</span><p><strong>Diploma, Computer Science</strong><span class="muted">Integral University</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="contact">
+      <div class="block-head"><h2>Contact</h2></div>
+      <div class="g12 contact">
+        <div class="bizcard" role="img" aria-label="Contact card for Mohd Shavez Qureshi">
+          <div class="bc-top">
+            <div><div class="bc-name">Mohd Shavez Qureshi</div><div class="bc-role">Backend Developer · TypeScript · Node.js · PostgreSQL</div></div>
+          </div>
+          <dl>
+            <dt>Email</dt><dd>mohdshavezqureshi1@gmail.com</dd>
+            <dt>GitHub</dt><dd>github.com/Shavez90</dd>
+            <dt>LinkedIn</dt><dd>linkedin.com/in/mohd-shavez-a8aa94286</dd>
+            <dt>Based in</dt><dd>Lucknow, India</dd>
+          </dl>
+        </div>
+        <div class="actions">
+          <p class="lead">Keep my card.</p>
+          <p class="muted">It saves as an image you can file with your notes or pass to your team.</p>
+          <p class="email-text" id="email-text">mohdshavezqureshi1@gmail.com</p>
+          <div class="btns">
+            <button class="primary" id="dl-card" type="button">Download card</button>
+            <button class="secondary" id="copy-email" type="button">Copy email</button>
+          </div>
+          <p class="status" id="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="colophon">
+        <span class="mono"><a href="https://github.com/Shavez90" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/mohd-shavez-a8aa94286" target="_blank" rel="noopener">LinkedIn</a></span>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script>
+(function () {
+  var EMAIL = "mohdshavezqureshi1@gmail.com";
+  var FILE = "Shavez-Qureshi-card.png";
+  var LINES = [["EMAIL", EMAIL], ["GITHUB", "github.com/Shavez90"], ["LINKEDIN", "linkedin.com/in/mohd-shavez-a8aa94286"], ["BASED IN", "Lucknow, India"]];
+  var statusEl = document.getElementById("status");
+  var dlBtn = document.getElementById("dl-card");
+  var copyBtn = document.getElementById("copy-email");
+  function say(t) { statusEl.textContent = t; }
+
+  var links = Array.prototype.slice.call(document.querySelectorAll(".rail nav a"));
+  if ("IntersectionObserver" in window) {
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute("href").slice(1)] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var a = byId[en.target.id];
+        if (!a) return;
+        links.forEach(function (l) { l.removeAttribute("aria-current"); });
+        a.setAttribute("aria-current", "true");
+      });
+    }, { rootMargin: "-35% 0px -60% 0px" });
+    Object.keys(byId).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  }
+
+  function drawCard() {
+    var fonts = ['60px "Libre Caslon Display"', '400 24px "Public Sans"', '400 22px "Public Sans"', '400 16px "JetBrains Mono"'];
+    var ready = (document.fonts && document.fonts.load) ? Promise.all(fonts.map(function (f) { return document.fonts.load(f); })) : Promise.resolve();
+    return ready.catch(function () {}).then(function () {
+      var W = 1050, H = 600, c = document.createElement("canvas");
+      c.width = W; c.height = H;
+      var g = c.getContext("2d");
+      g.fillStyle = "#FFFFFF"; g.fillRect(0, 0, W, H);
+      g.strokeStyle = "#DCCDAE"; g.lineWidth = 2; g.strokeRect(1, 1, W - 2, H - 2);
+      g.strokeStyle = "#84622A"; g.lineWidth = 1.5; g.strokeRect(24, 24, W - 48, H - 48);
+      g.fillStyle = "#1B1A18"; g.font = '60px "Libre Caslon Display", Georgia, serif';
+      g.fillText("Mohd Shavez Qureshi", 84, 160);
+      g.fillStyle = "#6E695F"; g.font = '400 24px "Public Sans", Arial, sans-serif';
+      g.fillText("Backend Developer · TypeScript · Node.js · PostgreSQL", 84, 206);
+      var y = 356;
+      LINES.forEach(function (row) {
+        g.fillStyle = "#84622A"; g.font = '400 16px "JetBrains Mono", Consolas, monospace';
+        g.fillText(row[0], 84, y);
+        g.fillStyle = "#1B1A18"; g.font = '400 22px "Public Sans", Arial, sans-serif';
+        g.fillText(row[1], 240, y);
+        y += 52;
+      });
+      return new Promise(function (resolve, reject) {
+        c.toBlob(function (b) { b ? resolve(b) : reject(new Error("blank")); }, "image/png");
+      });
+    });
+  }
+
+  var inViewer = !!(window.claude && typeof window.claude.use === "function");
+  var downloads = null;
+  if (inViewer) {
+    dlBtn.disabled = true;
+    window.claude.use("downloads").then(function (d) {
+      downloads = d;
+      if (d) { dlBtn.disabled = false; } else { dlBtn.hidden = true; say("Card download is not available in this view."); }
+    }, function () { dlBtn.hidden = true; });
+  }
+
+  dlBtn.addEventListener("click", function () {
+    say("Preparing your card…");
+    drawCard().then(function (blob) {
+      if (inViewer) {
+        return downloads.save({ filename: FILE, data: blob }).then(function () { say("Card saved."); }, function (e) {
+          var code = e && e.code;
+          if (code === "declined") say("Download cancelled.");
+          else if (code === "rate_limited") say("A download prompt is already open.");
+          else { say("Card download is not available in this view."); dlBtn.hidden = true; }
+        });
+      }
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url; a.download = FILE;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+      say("Card downloaded.");
+    }, function () { say("The card could not be drawn. Reload the page and try again."); });
+  });
+
+  copyBtn.addEventListener("click", function () {
+    var done = function () { say("Email copied."); };
+    var fallback = function () {
+      var el = document.getElementById("email-text");
+      var r = document.createRange(); r.selectNodeContents(el);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      say("Email selected, ready to copy.");
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(EMAIL).then(done, fallback);
+      else fallback();
+    } catch (e) { fallback(); }
+  });
+})();
+</script>
+</body>
+</html>
